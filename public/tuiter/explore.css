@@ -1,0 +1,121 @@
+/* this is created for the explore.html */
+.wd-search-bar {
+    background-color: darkgrey;
+    width: 88%;
+    height: 27px;
+    border-radius: 15px;
+    margin-right: 50px;
+    margin-top: 12px;
+    margin-left: 12px;
+    }
+
+input::placeholder {
+    color: white;
+    font-family:verdana;
+    font-size: 15px;
+}
+
+.wd-back-link {
+    color: white;
+    font-family:verdana;
+    font-size: 15px
+}
+
+.wd-tuiter-blue {
+    color: rgb(29,161,242);
+}
+
+.wd-tuiter-grey {
+    color: rgb(110, 118, 125);
+}
+
+.wd-border-color{
+    color: rgb(47, 51, 54);
+}
+
+.wd-topic-font{
+    font-family:verdana;
+    font-size: 13px
+}
+
+.wd-white {
+    color: white;
+}
+
+.wd-gear {
+    font-size: 35px;
+    margin-right: 12px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* For for you */
+.wd-border-bottom-thin{ border-bottom-width: 4px;
+                    border-bottom-style: solid;}
+
+/* The for you and other link needs this padding */
+.wd-hyperlinks-padding{
+    padding: 16px;
+    text-decoration: none;
+}
+
+.wd-tuiter-general-font {
+    font-weight: bold;
+    font-family:verdana;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.wd-tuiter-spacing{
+    line-height: 7.5px;
+}
+
+.wd-author-font{
+    font-weight: bold;
+    font-family:verdana;
+    font-size: 13px;
+    color: white;
+}
+.wd-tuit-border{
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    max-width: 800px;
+    padding-left: 12px;
+}
+
+.wd-search-and-hyperlink{
+    display: flex;
+}
+
+.wd-tuit-and-pic-border{
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    max-width: 800px;
+    padding-left: 12px;
+}
+
+.wd-tuit-main-content{
+    float: left;
+    margin-top: 12px;
+}
+
+.wd-picture{
+    height: 100px;
+    width: 100px;
+    float: right;
+    margin-right: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+.wd-float-done{
+    clear: both;
+}
+
+.wd-tuit-content-header{
+    display: flex;
+}
+
+.wd-time{
+    margin-left: 5px;
+}

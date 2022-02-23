@@ -1,0 +1,108 @@
+.wd-bookmark-border{
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    border-width: 1px;
+    max-width: 600px;
+}
+.wd-bookmark-font{
+    font-size: 20px;
+    font-family: Verdana;
+    color: white;
+    font-weight: bold;
+}
+.wd-bookmark-padding{
+    padding-top:12px;
+    padding-left:16px;
+}
+.wd-user-font{
+    font-size:13px;
+    font-family: Verdana;
+}
+.wd-tuiter-grey{
+    color: rgb(110,118,125);
+}
+.wd-avatar-image{
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    margin-right: 12px;
+}
+.wd-author-font{
+    font-size:15px;
+    font-family: Verdana;
+    font-weight:bold;
+    color: white;
+}
+.wd-author-spacing{
+    padding-top: 12px;
+}
+.wd-handle-font{
+    font-size:15px;
+    font-family: Verdana;
+    margin-left: 5px;
+}
+.wd-time-font{
+    font-size:15px;
+    font-family: Verdana;
+    margin-left: 5px;
+}
+
+.wd-content-font{
+    font-size:15px;
+    font-family: Verdana;
+    color: white;
+    max-width: 506px;
+    margin-top: 12px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+}
+.wd-tuit {
+    display: flex;
+}
+.wd-tuit-header{
+    display: flex;
+}
+.wd-big-image{
+    margin-top: 12px;
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-style: solid;
+    border-color: rgb(110,118,125);
+    border-width: 1px;
+}
+.wd-image-description{
+    width: 504px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.wd-image-description-main{
+    padding: 12px;
+}
+.wd-image-description-title{
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+}
+.wd-image-description-content{
+    font-size: 15px;
+}
+.wd-icon{
+    font-size: 20px;
+}
+.wd-actions{
+    display: flex;
+    margin-top: 12px;
+}
+.wd-action-num {
+    margin-left: 12px;
+    margin-right: 70px
+}
+.wd-action-link{
+    text-decoration: none;
+    display: flex;
+}
+.wd-tuiter-red{
+    color: red;
+}
