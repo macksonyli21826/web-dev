@@ -1,5 +1,12 @@
 /* this is created for the explore.html */
 
+.wd-icon-1{
+    margin-top: 4px;
+    margin-right: 5px;
+}
+.wd-flex-1{
+    display: flex;
+}
 .wd-tweet-block{
     display: flex;
     justify-content: space-between;
@@ -35,8 +42,9 @@
 }
 .wd-main-content{
     margin-top: 5px;
-    width: 620px;
+    max-width: 620px;
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 .wd-search-and-gear{
     display: flex;
@@ -74,21 +82,28 @@
 .wd-navigation-bar{
     margin-top: 5px;
     margin-right: 20px;
-    width: 200px;
+    width: 15%;
 }
+.wd-cog-link{
+    text-decoration: none;
+}
+
+.fa-stack{
+    padding-left: 0;
+}
+
 .wd-search-input{
     display: flex;
 }
 .btn-primary.wd-override-button{
     border-radius: 20px;
-    width: 200px;
+    width: 100%;
 }
 .wd-whtf-font{
     font-weight: bold;
 }
 .wd-who-to-follow{
     margin-top: 5px;
-    margin-left: 20px;
     width: 400px;
 }
 
@@ -212,6 +227,7 @@ input::placeholder {
 .wd-tuit-main-content{
     float: left;
     margin-top: 12px;
+    margin-right: 20px;
 }
 
 .wd-float-done{
