@@ -1,14 +1,135 @@
 /* this is created for the explore.html */
-.wd-search-bar {
-    background-color: darkgrey;
-    width: 88%;
-    height: 27px;
-    border-radius: 15px;
-    margin-right: 50px;
-    margin-top: 12px;
-    margin-left: 12px;
-    }
 
+.wd-tweet-block{
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+.wd-tweet-content-area{
+    margin-right: 10px;
+}
+.wd-tweet-title-2{
+    display: flex;
+}
+.wd-tweet-tile-1{
+    color: darkgrey;
+}
+.wd-tweet-author{
+    font-weight: bold;
+}
+.wd-tweet-time{
+    color: darkgrey;
+    margin-left: 5px;
+}
+.wd-tweet-num{
+    color: darkgrey;
+}
+.wd-tweet-content{
+    font-weight: bold;
+}
+.wd-tweet-pic{
+    height: 100px;
+    wdith: 100px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+.wd-main-content{
+    margin-top: 5px;
+    width: 620px;
+    margin-bottom: 20px;
+}
+.wd-search-and-gear{
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+.form-control.wd-search-bar{
+    border-radius: 20px;
+    padding-left: 50px;
+    width: 550px;
+}
+.wd-magnify{
+    position: relative;
+    left: 30px;
+    margin-top: 10px;
+}
+.wd-gear {
+    color: rgb(29,161,242);
+    margin-top: 4px;
+}
+.wd-hyperlink{
+    margin-top: 10px;
+}
+.wd-main-picture-area{
+    margin-top: 10px;
+}
+
+.wd-main-picture{
+    max-width: 620px;
+}
+
+.wd-explore-page{
+    display: flex;
+}
+.wd-navigation-bar{
+    margin-top: 5px;
+    margin-right: 20px;
+    width: 200px;
+}
+.wd-search-input{
+    display: flex;
+}
+.btn-primary.wd-override-button{
+    border-radius: 20px;
+    width: 200px;
+}
+.wd-whtf-font{
+    font-weight: bold;
+}
+.wd-who-to-follow{
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 400px;
+}
+
+.wd-who-to-follow-block{
+    display: flex;
+}
+.wd-who-to-follow-author-logo{
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    margin-right: 10px;
+}
+
+.wd-who-to-follow-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.wd-who-to-follow-author-name{
+    font-weight: bold;
+
+}
+.wd-who-to-follow-author-slug{
+    font-color: black;
+}
+.wd-who-to-follow-button{
+    margin-top: 5px;
+}
+
+.btn-primary.wd-override-follow-button{
+    border-radius: 20px;
+    width: 80px;
+}
+.wd-span-shrink{
+    margin-left: 0px;
+}
+
+.wd-tweet{
+    margin-top: 10px;
+}
 input::placeholder {
     color: white;
     font-family:verdana;
@@ -16,7 +137,7 @@ input::placeholder {
 }
 
 .wd-back-link {
-    color: white;
+    color: grey;
     font-family:verdana;
     font-size: 15px
 }
@@ -42,12 +163,7 @@ input::placeholder {
     color: white;
 }
 
-.wd-gear {
-    font-size: 35px;
-    margin-right: 12px;
-    text-decoration: none;
-    margin-top: 10px;
-}
+
 
 /* For for you */
 .wd-border-bottom-thin{ border-bottom-width: 4px;
@@ -84,7 +200,6 @@ input::placeholder {
 }
 
 .wd-search-and-hyperlink{
-    display: flex;
 }
 
 .wd-tuit-and-pic-border{
@@ -99,15 +214,6 @@ input::placeholder {
     margin-top: 12px;
 }
 
-.wd-picture{
-    height: 100px;
-    width: 100px;
-    float: right;
-    margin-right: 16px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    border-radius: 10px;
-}
 .wd-float-done{
     clear: both;
 }

@@ -3,135 +3,297 @@
 <head>
     <title>Explore</title>
     <link href = "explore.css" rel = "stylesheet"/>
+    <!-- link to bootstrap and fontawesome -->
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
 </head>
-<body style="background-color:black;">
+<!--<body style="background-color:black;">-->
+<body>
+    <div class = "container">
+        <!-- main content goes here. container is the start -->
+        <div class = "wd-explore-page">
+            <!-- in this level, display is flex and three categories
+            are laid: navigation-bar, main-content, who-to-follow -->
+            <div class = "wd-navigation-bar"> <!-- 1. navigation bar -->
+                <div class = "list-group">
+                    <a href = "home.html" class = "list-group-item list-groupp-item action">
+                        <i class = "fab fa-twitter "></i>
+                    </a>
+                    <a href = "home.html" class = "list-group-item list-groupp-item action">
+                        <i class = "fa fa-home"></i> Home
+                    </a>
+                    <a href = "explore.html" class = "list-group-item list-groupp-item action active">
+                        <i class = "fa fa-hashtag"></i> Explore
+                    </a>
+                    <a href = "notification.html" class = "list-group-item list-groupp-item action">
+                        <i class = "fa fa-bell"></i> Notifications
+                    </a>
+                    <a href = "message.html" class = "list-group-item list-groupp-item action">
+                        <i class = "fa fa-envelope"></i> Messages
+                    </a>
+                    <a href = "bookmark.html" class = "list-group-item list-groupp-item action">
+                        <i class = "fa fa-bookmark"></i> Bookmarks
+                    </a>
+                    <a href = "list.html" class = "list-group-item list-groupp-item action">
+                        <i class = "fa fa-list-ul"></i> Lists
+                    </a>
+                    <a href = "profile.html.html" class = "list-group-item list-groupp-item action">
+                        <i class = "fas fa-user-alt"></i> Profile
+                    </a>
+                    <a href = "notification.html" class = "list-group-item list-groupp-item action">
+                        <span class = "fa-stack">
+                            <i class = "fas fa-circle fa-stack-2x"></i>
+                            <i class = "fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                        </span>
+                        More
+                    </a>
 
-    <br/>
-    <a class = "wd-back-link" href = "navigation.html">Back to Navigation</a>
-    <br/>
-    <br/>
+                </div>
+                <div class = "wd-tweet">
+                    <button class="btn btn-primary wd-override-button">
+                        Tweet
+                    </button>
+                </div>
+            </div>
+
     <!-- Border for search bar and hyperlinks -->
-    <div class = "wd-tuit-border">
-        <div class = "wd-search-and-hyperlink">
-            <!-- input field with rounded corner -->
-            <input class = "wd-search-bar"
-            placeholder = "   Search Tuiter"
-            id = "search">
-            <!-- form of gear -->
-            <a class = "wd-gear wd-tuiter-blue" href = "explore-settings.html">&#9881;</a>
-        </div>
-        <br/>
-        <!-- hyperlinks -->
-        <a class = "wd-tuiter-general-font
-        wd-tuiter-blue
-        wd-hyperlinks-padding
-        wd-border-bottom-thin
-        " href = "link_of_for_you(TBD)"> For you </a>
-        <!-- trending -->
-        <a class = "wd-tuiter-general-font
-        wd-tuiter-grey
-        wd-hyperlinks-padding
-        "href = "link_of_trending(TBD)"> Trending </a>
-        <!-- covid-19 -->
-        <a class = "wd-tuiter-general-font
-        wd-tuiter-grey
-        wd-hyperlinks-padding
-        " href = "link_of_covid19(TBD)"> COVID-19 </a>
-        <!-- News -->
-        <a class = "wd-tuiter-general-font
-        wd-tuiter-grey
-        wd-hyperlinks-padding
-        " href = "link_of_news(TBD)"> News </a>
-        <!-- Sports -->
-        <a class = "wd-tuiter-general-font
-        wd-tuiter-grey
-        wd-hyperlinks-padding
-        " href = "link_of_sports(TBD)"> Sports </a>
-        <!-- Entertainment -->
-        <a class = "wd-tuiter-general-font
-        wd-tuiter-grey
-        wd-hyperlinks-padding
-        " href = "link_of_entertainment(TBD)"> Entertainment </a>
-        <br/>
-        <br/>
-    </div>
+            <div class = "wd-main-content"> <!-- 2. main-content -->
+                <div class = "wd-search-and-gear">
+                    <div class = "wd-search-input">
+                        <i class = "fa fa-search wd-magnify"></i>
+                        <input type = "text" class = "form-control wd-search-bar"
+                           placeholder = "Search Twitter">
+                    </div>
+                    <div class = "wd-gear">
+                        <i class = "fa fa-cog fa-2x"></i>
+                    </div>
+                </div> <!-- end of search bar and gear -->
+                <div class = "wd-hyperlink">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">For you</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Entertainment</a>
+                        </li>
+                    </ul>
+                </div> <!-- end of hyperlinks -->
+                <div class = "wd-main-picture-area">
+                    <img src = "starship-fo.jpg" class = "wd-main-picture">
+                </div> <!-- end of picture area -->
 
-    <!-- suggested posts -->
-    <div class = "wd-tuit-border">
-        <p class = "wd-topic-font wd-tuiter-grey wd-tuiter-spacing">Trending in Science</p>
-        <p class = "wd-tuiter-general-font wd-white wd-tuiter-spacing">Starship</p>
-        <p class = "wd-topic-font wd-tuiter-grey wd-tuiter-spacing">55.5K Tuits</p>
-    </div>
+                <div class = "wd-tweet-area">
+                    <!-- tweet blocks area -->
+                    <div class = "list group">
+                        <!-- ReactJS tweet block -->
+                        <li class="list-group-item">
+                            <div class = "wd-tweet-block">
+                                <div class = "wd-tweet-content-area">
+                                    <div class ="wd-tweet-tile-1">
+                                        Web Development
+                                    </div>
+                                    <div class = "wd-tweet-title-2">
+                                        <div class = "wd-tweet-author">
+                                            ReactJS
+                                            <i class = "fa fa-check-circle"></i>
+                                        </div>
+                                        <div class = "wd-tweet-time">
+                                            - 2h
+                                        </div>
+                                    </div>
+                                    <div class = "wd-tweet-content">
+                                        React.js is a component based front end library that makes it
+                                        very easy to build Single Page Applications or SPAs
+                                    </div>
+                                </div>
+                                <img src = "react-fo.jpg" class = "wd-tweet-pic">
+                            </div>
+                        </li>
+                        <!-- JavaScript Tweet block -->
+                        <li class="list-group-item">
+                            <div class = "wd-tweet-block">
+                                <div class = "wd-tweet-content-area">
+                                    <div class = "wd-tweet-title-2">
+                                        <div class = "wd-tweet-author">
+                                            JavaScript
+                                            <i class = "fa fa-check-circle"></i>
+                                        </div>
+                                        <div class = "wd-tweet-time">
+                                            - 2h
+                                        </div>
+                                    </div>
+                                    <div class = "wd-tweet-content">
+                                        JavaScript is programming language that can run on browsers as well as desktops
+                                    </div>
+                                    <div class = "wd-tweet-num">
+                                        123K Tweets
+                                    </div>
+                                </div>
+                                <img src = "js-fo.jpg" class = "wd-tweet-pic">
+                            </div>
+                        </li>
+                        <!-- jQuery Tweet block -->
+                        <li class="list-group-item">
+                            <div class = "wd-tweet-block">
+                                <div class = "wd-tweet-content-area">
+                                    <div class ="wd-tweet-tile-1">
+                                        Web Development
+                                    </div>
+                                    <div class = "wd-tweet-content">
+                                        jQuery
+                                    </div>
+                                </div>
+                                <div class = "wd-tweet-num">
+                                    123K Tweets
+                                </div>
+                                <img src = "jq-fo.jpg" class = "wd-tweet-pic">
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class = "wd-tweet-block">
+                                <div class = "wd-tweet-content-area">
+                                    <div class ="wd-tweet-tile-1">
+                                        Web Development
+                                    </div>
+                                    <div class = "wd-tweet-title-2">
+                                        <div class = "wd-tweet-author">
+                                            NodeJS
+                                            <i class = "fa fa-check-circle"></i>
+                                        </div>
+                                        <div class = "wd-tweet-time">
+                                            - 2h
+                                        </div>
+                                    </div>
+                                    <div class = "wd-tweet-num">
+                                        123K Tweets
+                                    </div>
 
-    <!-- suggested posts -->
-    <div class = "wd-tuit-border">
-        <p class = "wd-topic-font wd-tuiter-grey wd-tuiter-spacing">Sports Trending</p>
-        <p class = "wd-tuiter-general-font wd-white wd-tuiter-spacing">Joe Rogan</p>
-        <p class = "wd-topic-font wd-tuiter-grey wd-tuiter-spacing">5,218 Tweets</p>
-    </div>
+                                </div>
+                                <img src = "gjs-fo.jpg" class = "wd-tweet-pic">
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div> <!-- end of main-content -->
 
-    <!-- posts with author and picture -->
-    <div class = "wd-tuit-and-pic-border"> <!-- start of the float -->
-        <div class = "wd-tuit-main-content">
-            <div class = "wd-tuit-content-header">
-                <div class = "wd-author-font">The New York Times</div>
-                <div class = "wd-topic-font wd-tuiter-grey wd-time">Yesterday</div>
-            </div>
-            <div class = "wd-tuiter-general-font wd-white">
-                CNN's Cuomo conundrum: A star anchor with a brother in trouble
-            </div>
-        </div>
-        <img class = "wd-picture" src = "cuomo.jpg"> <!-- align to the right -->
-        <div class = "wd-float-done"></div> <!-- end of the float -->
-    </div>
-
-    <!-- posts with topic and picture -->
-    <div class = "wd-tuit-and-pic-border"> <!-- start of the float -->
-        <div class = "wd-tuit-main-content">
-            <div class = "wd-tuit-content-header">
-                <div class = "wd-topic-font wd-tuiter-grey">COVID-19 LIVE</div>
-            </div>
-            <div class = "wd-tuiter-general-font wd-white">
-                COVID-19: News and updates for Massachusetts
-            </div>
-        </div>
-        <img class = "wd-picture" src = "Mass.jpg"> <!-- align to the right -->
-        <div class = "wd-float-done"></div> <!-- end of the float -->
-    </div>
-
-    <!-- posts with author and picture -->
-    <div class = "wd-tuit-and-pic-border"> <!-- start of the float -->
-        <div class = "wd-tuit-main-content">
-            <div class = "wd-tuit-content-header">
-                <div class = "wd-author-font">Bloomberg Opinion</div>
-                <div class = "wd-topic-font wd-tuiter-grey wd-time">Yesterday</div>
-            </div>
-            <div class = "wd-tuiter-general-font wd-white">
-                Thinking about getting a booster? Read this first.
-            </div>
-        </div>
-        <img class = "wd-picture" src = "Booster.jpg"> <!-- align to the right -->
-        <div class = "wd-float-done"></div> <!-- end of the float -->
-    </div>
-
-    <!-- suggested posts -->
-    <div class = "wd-tuit-border">
-        <p class = "wd-topic-font wd-tuiter-grey wd-tuiter-spacing">Trending in United States</p>
-        <p class = "wd-tuiter-general-font wd-white wd-tuiter-spacing">Wonder Bread</p>
-        <p class = "wd-topic-font wd-tuiter-grey wd-tuiter-spacing">1,259 Tweets</p>
-    </div>
-    <!-- posts with topic and picture -->
-    <div class = "wd-tuit-and-pic-border"> <!-- start of the float -->
-        <div class = "wd-tuit-main-content">
-            <div class = "wd-tuit-content-header">
-                <div class = "wd-topic-font wd-tuiter-grey">ASSETTO CORSA</div>
-            </div>
-            <div class = "wd-tuiter-general-font wd-white">
-                New vehicle added to the game
-            </div>
-        </div>
-        <img class = "wd-picture" src = "86-1.jpg"> <!-- align to the right -->
-        <div class = "wd-float-done"></div> <!-- end of the float -->
-    </div>
+            <!-- start of who-to-follow -->
+            <div class = "wd-who-to-follow">
+                <div class = "list group">
+                    <li class="list-group-item">
+                        <span class = "wd-whtf-font">Who to follow</span>
+                    </li>
+                    <!-- Java block -->
+                    <li class="list-group-item">
+                        <div class = "wd-who-to-follow-block">
+                            <img class = "wd-who-to-follow-author-logo" src = "java-fo.jpg">
+                            <div class = "wd-who-to-follow-content">
+                                <div>
+                                    <div class = "wd-who-to-follow-author-name">
+                                        Java
+                                        <i class = "fa fa-check-circle"></i>
+                                    </div>
+                                    <div class = "wd-who-to-follow-author-slug">@Java</div>
+                                </div>
+                                <div class = "wd-who-to-follow-button">
+                                    <button class="btn btn-primary wd-override-follow-button">
+                                        Follow
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Relativity block -->
+                    <li class="list-group-item">
+                        <div class = "wd-who-to-follow-block">
+                            <img class = "wd-who-to-follow-author-logo" src = "relativity-fo.jpg">
+                            <div class = "wd-who-to-follow-content">
+                                <div>
+                                    <div class = "wd-who-to-follow-author-name">
+                                        Relativity Space
+                                        <i class = "fa fa-check-circle"></i>
+                                    </div>
+                                    <div class = "wd-who-to-follow-author-slug">@relativityspace</div>
+                                </div>
+                                <div class = "wd-who-to-follow-button">
+                                    <button class="btn btn-primary wd-override-follow-button">
+                                        Follow
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Virgin Galactic block -->
+                    <li class="list-group-item">
+                        <div class = "wd-who-to-follow-block">
+                            <img class = "wd-who-to-follow-author-logo" src = "virgin-fo.jpg">
+                            <div class = "wd-who-to-follow-content">
+                                <div>
+                                    <div class = "wd-who-to-follow-author-name">
+                                        Virgin Galactic
+                                        <i class = "fa fa-check-circle"></i>
+                                    </div>
+                                    <div class = "wd-who-to-follow-author-slug">@virgingalactic</div>
+                                </div>
+                                <div class = "wd-who-to-follow-button">
+                                    <button class="btn btn-primary wd-override-follow-button">
+                                        Follow
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- NASA block -->
+                    <li class="list-group-item">
+                        <div class = "wd-who-to-follow-block">
+                            <img class = "wd-who-to-follow-author-logo" src = "NASA-fo.jpg">
+                            <div class = "wd-who-to-follow-content">
+                                <div>
+                                    <div class = "wd-who-to-follow-author-name">
+                                        NASA
+                                        <i class = "fa fa-check-circle"></i>
+                                    </div>
+                                    <div class = "wd-who-to-follow-author-slug">@NASA</div>
+                                </div>
+                                <div class = "wd-who-to-follow-button">
+                                    <button class="btn btn-primary wd-override-follow-button">
+                                        Follow
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Tesla block -->
+                    <li class="list-group-item">
+                        <div class = "wd-who-to-follow-block">
+                            <img class = "wd-who-to-follow-author-logo" src = "tesla-fo.jpg">
+                            <div class = "wd-who-to-follow-content">
+                                <div>
+                                    <div class = "wd-who-to-follow-author-name">
+                                        Tesla
+                                        <i class = "fa fa-check-circle"></i>
+                                    </div>
+                                    <div class = "wd-who-to-follow-author-slug">@Tesla</div>
+                                </div>
+                                <div class = "wd-who-to-follow-button">
+                                    <button class="btn btn-primary wd-override-follow-button">
+                                        Follow
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div> <!-- end of the list group -->
+            </div> <!-- end of who-to-follow-->
+        </div> <!-- end of explore page -->
+    </div> <!-- end of container -->
 </body>
 </html>
