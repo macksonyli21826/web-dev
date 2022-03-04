@@ -42,15 +42,10 @@
 }
 .wd-main-content{
     margin-top: 5px;
-    max-width: 620px;
-    margin-bottom: 20px;
-    margin-right: 20px;
 }
 .wd-search-and-gear{
-    display: flex;
-    justify-content: space-between;
-    width: 100%
 }
+
 .form-control.wd-search-bar{
     border-radius: 20px;
     padding-left: 50px;
@@ -69,11 +64,9 @@
     margin-top: 10px;
 }
 .wd-main-picture-area{
-    margin-top: 10px;
 }
 
 .wd-main-picture{
-    max-width: 620px;
 }
 
 .wd-explore-page{
@@ -81,8 +74,6 @@
 }
 .wd-navigation-bar{
     margin-top: 5px;
-    margin-right: 20px;
-    width: 15%;
 }
 .wd-cog-link{
     text-decoration: none;
@@ -104,7 +95,6 @@
 }
 .wd-who-to-follow{
     margin-top: 5px;
-    width: 400px;
 }
 
 .wd-who-to-follow-block{

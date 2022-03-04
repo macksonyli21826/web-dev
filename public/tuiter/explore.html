@@ -6,15 +6,17 @@
     <!-- link to bootstrap and fontawesome -->
     <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <!-- this one is the Cyborg theme from Bootswatch -->
+    <link href="../vendors/bootstrap/bootstrap.min.css" rel = "stylesheet"/>
 </head>
 <!--<body style="background-color:black;">-->
 <body>
     <div class = "container">
         <!-- main content goes here. container is the start -->
-        <div class = "wd-explore-page">
+        <div class = "row mt-3"> <!-- row to make grid layout, mt set margin top -->
             <!-- in this level, display is flex and three categories
             are laid: navigation-bar, main-content, who-to-follow -->
-            <div class = "wd-navigation-bar"> <!-- 1. navigation bar -->
+            <div class = "col-2 wd-navigation-bar"> <!-- 1. navigation bar -->
                 <div class = "list-group">
                     <a href = "home.html" class = "list-group-item list-groupp-item action">
                         <i class = "fab fa-twitter"></i>
@@ -55,7 +57,7 @@
                             <span class = "d-none d-lg-block">Lists</span>
                         </div>
                     </a>
-                    <a href = "profile.html.html" class = "list-group-item list-groupp-item action">
+                    <a href = "profile.html" class = "list-group-item list-groupp-item action">
                         <div class = "wd-flex-1">
                             <i class = "fa fa-user-alt wd-icon-1"></i>
                             <span class = "d-none d-lg-block">Profile</span>
@@ -80,14 +82,13 @@
             </div>
 
     <!-- Border for search bar and hyperlinks -->
-            <div class = "wd-main-content"> <!-- 2. main-content -->
-                <div class = "wd-search-and-gear">
-                    <div class = "wd-search-input">
+            <div class = "col-6 wd-main-content"> <!-- 2. main-content -->
+                <div class = "wd-search-and-gear row">
+                    <div class = "wd-search-input col-11">
                         <i class = "fa fa-search wd-magnify"></i>
-                        <input type = "text" class = "form-control wd-search-bar"
-                           placeholder = "Search Twitter">
+                        <input type = "text" class = "form-control wd-search-bar" placeholder = "Search Twitter">
                     </div>
-                    <div class = "wd-gear">
+                    <div class = "wd-gear col-1">
                         <a href = "explore-settings.html wd-cog-link">
                             <i class = "fa fa-cog fa-2x"></i>
                         </a>
@@ -112,8 +113,9 @@
                         </li>
                     </ul>
                 </div> <!-- end of hyperlinks -->
-                <div class = "wd-main-picture-area">
-                    <img src = "starship-fo.jpg" class = "wd-main-picture">
+
+                <div class = "wd-main-picture-area mt-2">
+                    <img src = "starship-fo.jpg" class = "wd-main-picture col-12">
                 </div> <!-- end of picture area -->
 
                 <div class = "wd-tweet-area">
@@ -212,7 +214,7 @@
             </div> <!-- end of main-content -->
 
             <!-- start of who-to-follow -->
-            <div class = "wd-who-to-follow d-none d-md-block">
+            <div class = "col-4 wd-who-to-follow">
                 <div class = "list group">
                     <li class="list-group-item">
                         <span class = "wd-whtf-font">Who to follow</span>
