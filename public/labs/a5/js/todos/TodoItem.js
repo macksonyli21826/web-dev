@@ -1,10 +1,19 @@
+//const TodoItem = (todo) => {
+//    return (`
+//        <li>
+//            ${todo}
+//        </li>
+//    `)
+//}
+//export default TodoItem;
+
 const TodoItem = (todo) => {
-    return(`
+    return (`
         <li>
-        <input type="checkbox"
-        ${todo.done ? 'checked' : ''}/>
-        ${todo.title}
-        (${todo.status})
+            <input type = "checkbox"
+            ${todo.done ? 'checked':''}/>
+            ${todo.title}
+            (${todo.status})
         </li>
     `);
 }

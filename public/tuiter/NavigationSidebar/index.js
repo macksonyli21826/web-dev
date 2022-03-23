@@ -10,7 +10,7 @@ const NavigationSidebar = () => {
             <div class = "col-2">
                 <i class="fa fa-home"></i>
             </div>
-            <div class = "col-10">
+            <div class = "col-10 d-none d-xl-block">
                 <span>Home</span>
             </div>
         </div>
@@ -20,7 +20,7 @@ const NavigationSidebar = () => {
             <div class = "col-2">
                 <i class="fa fa-hashtag"></i>
             </div>
-            <div class = "col-10">
+            <div class = "col-10 d-none d-xl-block">
                 <span>Explore</span>
             </div>
         </div>
@@ -30,7 +30,7 @@ const NavigationSidebar = () => {
             <div class = "col-2">
                 <i class="fa fa-bell"></i>
             </div>
-            <div class = "col-10">
+            <div class = "col-10 d-none d-xl-block">
                 <span>Notifications</span>
             </div>
         </div>
@@ -40,7 +40,7 @@ const NavigationSidebar = () => {
             <div class = "col-2">
                 <i class="fa fa-envelope"></i>
             </div>
-            <div class = "col-10">
+            <div class = "col-10 d-none d-xl-block">
                 <span>Messages</span>
             </div>
         </div>
@@ -50,7 +50,7 @@ const NavigationSidebar = () => {
             <div class = "col-2">
                 <i class="fa fa-bookmark"></i>
             </div>
-            <div class = "col-10">
+            <div class = "col-10 d-none d-xl-block">
                 <span>Bookmarks</span>
             </div>
         </div>
@@ -60,7 +60,7 @@ const NavigationSidebar = () => {
             <div class = "col-2">
                 <i class="fa fa-list-ul"></i>
             </div>
-            <div class = "col-10">
+            <div class = "col-10 d-none d-xl-block">
                 <span>Lists</span>
             </div>
         </div>
@@ -70,7 +70,7 @@ const NavigationSidebar = () => {
             <div class = "col-2">
                 <i class="fa fa-user-alt"></i>
             </div>
-            <div class = "col-10">
+            <div class = "col-10 d-none d-xl-block">
                 <span>Profile</span>
             </div>
         </div>
@@ -83,7 +83,7 @@ const NavigationSidebar = () => {
                      <i class = "fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
                 </span>
             </div>
-            <div class = "col-10">
+            <div class = "col-10 d-none d-xl-block">
                 <span>More</span>
             </div>
         </div>
