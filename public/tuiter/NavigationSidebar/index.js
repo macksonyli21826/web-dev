@@ -5,7 +5,7 @@ const NavigationSidebar = () => {
     <a class="list-group-item" href="/">
         <i class="fab fa-twitter"></i>
     </a>
-    <a class="list-group-item" href="home.html">
+    <a class="list-group-item" href="../HomeScreen/home.html" >
         <div class = "row">
             <div class = "col-2">
                 <i class="fa fa-home"></i>
@@ -15,7 +15,7 @@ const NavigationSidebar = () => {
             </div>
         </div>
     </a>
-    <a class="list-group-item" href="explore.html">
+    <a class="list-group-item" href="../ExploreScreen/explore.html">
         <div class = "row">
             <div class = "col-2">
                 <i class="fa fa-hashtag"></i>
@@ -25,7 +25,7 @@ const NavigationSidebar = () => {
             </div>
         </div>
     </a>
-    <a class="list-group-item" href="notification.html">
+    <a class="list-group-item">
         <div class = "row">
             <div class = "col-2">
                 <i class="fa fa-bell"></i>
@@ -35,7 +35,7 @@ const NavigationSidebar = () => {
             </div>
         </div>
     </a>
-    <a class="list-group-item" href="message.html">
+    <a class="list-group-item">
         <div class = "row">
             <div class = "col-2">
                 <i class="fa fa-envelope"></i>
@@ -45,7 +45,7 @@ const NavigationSidebar = () => {
             </div>
         </div>
     </a>
-    <a class="list-group-item" href="bookmark.html">
+    <a class="list-group-item" href="../bookmark.html">
         <div class = "row">
             <div class = "col-2">
                 <i class="fa fa-bookmark"></i>
@@ -55,7 +55,7 @@ const NavigationSidebar = () => {
             </div>
         </div>
     </a>
-    <a class="list-group-item" href="list.html">
+    <a class="list-group-item">
         <div class = "row">
             <div class = "col-2">
                 <i class="fa fa-list-ul"></i>
@@ -65,7 +65,7 @@ const NavigationSidebar = () => {
             </div>
         </div>
     </a>
-    <a class="list-group-item" href="profile.html">
+    <a class="list-group-item">
         <div class = "row">
             <div class = "col-2">
                 <i class="fa fa-user-alt"></i>
@@ -75,7 +75,7 @@ const NavigationSidebar = () => {
             </div>
         </div>
     </a>
-    <a class="list-group-item" href="more.html">
+    <a class="list-group-item">
         <div class = "row">
             <div class = "col-2">
                 <span class = "fa-stack start-0">
@@ -88,19 +88,42 @@ const NavigationSidebar = () => {
             </div>
         </div>
     </a>
-    
-    
-    
-    
-    
-
 </div>
 <div class="d-grid mt-2">
-    <a href="tweet.html" class="btn btn-primary btn-block rounded-pill">
+    <a class="btn btn-primary btn-block rounded-pill">
         Tweet
     </a>
 </div>
+
+<script>
+    // works for those without link href
+    $(".list-group a").on("click", function(){
+       $(".list-group a").removeClass("active");
+       $(this).addClass("active");
+    });
+    
+    // works for those with link href
+    $(document).ready(function() {
+        currentPage();
+    });
+    
+    function currentPage() {
+        // path = xxx.html, which is where we are now
+        const path = $(location).attr('href').split('/').slice(-1).join('');
+        // href = the reference written on the button 
+        $(".list-group a").each(function () {
+            const href = $(this).attr('href');
+            if(href && href.includes(path)){
+                $(this).addClass("active");
+            };
+        });
+    };
+</script>
+
 <!-- end of html -->
 `);
 }
+
+
+
 export default NavigationSidebar;
