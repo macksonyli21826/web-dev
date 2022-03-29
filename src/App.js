@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import './vendors/bootstrap/css/bootstrap.min.css';
+import './vendors/bootstrap/bootstrap.min.css';
+import './vendors/fontawesome/css/all.min.css';
+
+import React from "react";
+
+import HelloWorld from "./components//HelloWorld"; // no.js extension needed
+import Labs from "./components/labs/index.js";
+import Tuiter from "./components/tuiter/index.js";
+
+import {BrowserRouter,
+    Route,
+    Routes} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to Web Dev
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+          <div className="container">
+              <Routes>
+                  <Route path="/hello"
+                         element={<HelloWorld/>}/>
+                  <Route path="/"
+                         element={<Labs/>}/>
+                  <Route path="/tuiter"
+                         element={<Tuiter/>}/>
+              </Routes>
+          </div>
+      </BrowserRouter>
+
   );
 }
 
