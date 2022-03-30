@@ -11,7 +11,7 @@ const PostSummaryItem = (
         }
     }) => {
     return(
-        <div>
+        <div>{}
             <li className = "list-group-item">
                 <div className = "wd-flex wd-space-between">
                     <div>
@@ -32,7 +32,7 @@ const PostSummaryItem = (
                         </div>
                     </div>
                     <div>
-                        <img src={post.image} width = "100" className = "wd-image-1"/>
+                        <img src={post.image} width = "100" className = "wd-image-1" alt = "post's related"/>
                     </div>
                 </div>
             </li>

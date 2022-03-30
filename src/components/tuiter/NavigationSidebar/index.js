@@ -1,15 +1,21 @@
 import React from "react";
+import {Link} from "react-router-dom";
 const NavigationSidebar = (
     {
         active = 'explore'
     }) => {return(
         <div>
             <div classNameName="list-group">
-                <a classNameName="list-group-item" href="/">
-                    <i className="fab fa-twitter"></i>
-                </a>
-                <a className = {`list-group-item ${active === 'home' ? 'active' : ''}`}
-                   href="../HomeScreen/home.html" >
+                <Link to = "/" className="list-group-item" >
+                    <div className = "row">
+                        <div className= "col-2">
+                            <i className="fab fa-twitter"></i>
+                        </div>
+                        <div className = "col-10 d-none d-xl-block">
+                        </div>
+                    </div>
+                </Link>
+                <Link to = "/tuiter/home" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
                     <div className = "row">
                         <div className = "col-2">
                             <i className="fa fa-home"></i>
@@ -18,8 +24,8 @@ const NavigationSidebar = (
                             <span>Home</span>
                         </div>
                     </div>
-                </a>
-                <a className = {`list-group-item ${active === 'explore' ? 'active' : ''}`} href="../ExploreScreen/explore.html">
+                </Link>
+                <Link to = "/tuiter/explore" className = {`list-group-item ${active === 'explore' ? 'active' : ''}`}>
                     <div className = "row">
                         <div className = "col-2">
                             <i className="fa fa-hashtag"></i>
@@ -28,8 +34,8 @@ const NavigationSidebar = (
                             <span>Explore</span>
                         </div>
                     </div>
-                </a>
-                <a className = {`list-group-item ${active === 'notification' ? 'active' : ''}`} href = "/">
+                </Link>
+                <Link to = "/" className = {`list-group-item ${active === 'notification' ? 'active' : ''}`}>
                     <div className = "row">
                         <div className = "col-2">
                             <i className="fa fa-bell"></i>
@@ -38,9 +44,9 @@ const NavigationSidebar = (
                             <span>Notifications</span>
                         </div>
                     </div>
-                </a>
+                </Link>
 
-                <a className = {`list-group-item ${active === 'message' ? 'active' : ''}`} href = "/">
+                <Link to = "/" className = {`list-group-item ${active === 'message' ? 'active' : ''}`}>
                     <div className = "row">
                         <div className = "col-2">
                             <i className="fa fa-envelope"></i>
@@ -49,8 +55,8 @@ const NavigationSidebar = (
                             <span>Messages</span>
                         </div>
                     </div>
-                </a>
-                <a className = {`list-group-item ${active === 'bookmark' ? 'active' : ''}`} href="../bookmark.html">
+                </Link>
+                <Link to = "/" className = {`list-group-item ${active === 'bookmark' ? 'active' : ''}`}>
                     <div className = "row">
                         <div className = "col-2">
                             <i className="fa fa-bookmark"></i>
@@ -59,8 +65,8 @@ const NavigationSidebar = (
                             <span>Bookmarks</span>
                         </div>
                     </div>
-                </a>
-                <a className = {`list-group-item ${active === 'list' ? 'active' : ''}`} href = "/">
+                </Link>
+                <Link to = "/" className = {`list-group-item ${active === 'list' ? 'active' : ''}`}>
                     <div className = "row">
                         <div className = "col-2">
                             <i className="fa fa-list-ul"></i>
@@ -69,9 +75,9 @@ const NavigationSidebar = (
                             <span>Lists</span>
                         </div>
                     </div>
-                </a>
+                </Link>
 
-                <a className = {`list-group-item ${active === 'profile' ? 'active' : ''}`} href = "/">
+                <Link to = "/" className = {`list-group-item ${active === 'profile' ? 'active' : ''}`}>
                     <div className = "row">
                         <div className = "col-2">
                             <i className="fa fa-user-alt"></i>
@@ -80,9 +86,9 @@ const NavigationSidebar = (
                             <span>Profile</span>
                         </div>
                     </div>
-                </a>
+                </Link>
 
-                <a className = {`list-group-item ${active === 'more' ? 'active' : ''}`} href = "/">
+                <Link to = "/" className = {`list-group-item ${active === 'more' ? 'active' : ''}`}>
                     <div className = "row">
                         <div className = "col-2">
                             <span className = "fa-stack start-0">
@@ -91,15 +97,15 @@ const NavigationSidebar = (
                             </span>
                         </div>
                         <div className = "col-10 d-none d-xl-block">
-                            <span>More</span>
+                            <span className = "ms-3">More</span>
                         </div>
                     </div>
-                </a>
+                </Link>
             </div>
             <div className="d-grid mt-2">
-                <a className="btn btn-primary btn-block rounded-pill">
+                <Link to = "/" className="btn btn-primary btn-block rounded-pill">
                     Tweet
-                </a>
+                </Link>
             </div>
         </div>
 );

@@ -11,7 +11,7 @@ const WhoToFollowListItem = ({who = {
                     <div className="wd-flex">
                         <div>
                             <img src = {who.avatarIcon}
-                                 className = "wd-avatar-1" />
+                                 className = "wd-avatar-1" alt = "avatar"/>
                         </div>
 
                         <div>
