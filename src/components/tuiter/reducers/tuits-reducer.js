@@ -1,6 +1,10 @@
 import tuits from "../data/tuits.json";
 const tuitsReducer = (state = tuits, action) => {
     switch (action.type) {
+
+        default:
+            return tuits
+
         case 'create-tuit':
             const newTuit = {
                 tuit: action.tuit,
@@ -38,9 +42,6 @@ const tuitsReducer = (state = tuits, action) => {
                     return tuit;
                 }
             });
-
-        default:
-            return tuits
     }
 }
 export default tuitsReducer;

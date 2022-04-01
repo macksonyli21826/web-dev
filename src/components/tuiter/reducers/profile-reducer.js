@@ -12,7 +12,13 @@ const profileData = {
     followingCount: 312,
     followersCount: 180
 }
-const profileReducer = () => {
-    return profileData;
+const profileReducer = (state=profileData, action) => {
+    switch(action.type){
+        default:
+            return profileData;
+
+        case "save-profile":
+            return action.data
+    }
 }
 export default profileReducer;

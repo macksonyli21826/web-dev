@@ -77,7 +77,7 @@ const NavigationSidebar = (
                     </div>
                 </Link>
 
-                <Link to = "/" className = {`list-group-item ${active === 'profile' ? 'active' : ''}`}>
+                <Link to = "/tuiter/profile" className = {`list-group-item ${active === 'profile' ? 'active' : ''}`}>
                     <div className = "row">
                         <div className = "col-2">
                             <i className="fa fa-user-alt"></i>

@@ -6,11 +6,13 @@ import Tuiter from "./components/tuiter";
 import HelloWorld from "./components/HelloWorld"; // no.js extension needed
 import Labs from "./components/labs";
 import HomeScreen from "./components/tuiter/HomeScreen";
-import ProfileScreen from "./components/tuiter/ProfileScreen";
-//import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen";
+//import ProfileScreen from "./components/tuiter/ProfileScreen";
 import {BrowserRouter,
     Route,
     Routes} from "react-router-dom";
+import Profile from "./components/tuiter/Profile";
+import EditProfile from "./components/tuiter/Profile/EditProfile";
+import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen";
 
 
 function App() {
@@ -27,8 +29,12 @@ function App() {
                              element={<Tuiter/>}>
                           <Route index
                                  element={<HomeScreen/>}/>
+                          <Route path = "explore"
+                                 element ={<ExploreScreen/>}/>
                           <Route path = "profile"
-                                 element={<ProfileScreen/>}/>
+                                 element={<Profile/>}/>
+                          <Route path = "profile/edit"
+                                 element={<EditProfile/>}/>
                       </Route>
                   </Route>
               </Routes>

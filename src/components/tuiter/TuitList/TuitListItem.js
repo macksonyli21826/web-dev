@@ -1,6 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import TuitStats from "./TuitStats";
+import jsImage from "../../../images/js.png";
 const TuitListItem = ({tuit}) => {
     const dispatch = useDispatch();
     const deleteTuit = (tuit) => {
@@ -42,7 +43,7 @@ const TuitListItem = ({tuit}) => {
                         </iframe>
                     }
                     {tuit.attachments && tuit.attachments.image &&
-                        <img className = "card-img" src = {tuit.attachments.image} alt = "post"/>
+                        <img className = "card-img" src = {jsImage} alt = "post"/>
                     }
                     </div>
                     <div className="row mt-2 wd-darkgrey">

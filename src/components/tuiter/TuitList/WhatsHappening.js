@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
+import profilePicture from "../../../images/profilePicture.png";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening]
@@ -14,12 +15,12 @@ const WhatsHappening = () => {
         <div className = "wd-flex">
             <div>
                 <div>
-                    <img className = "wd-avatar-1 me-3" src = "../../../../public/images/js.png" alt = "avatar"/>
+                    <img className = "wd-avatar-1 me-3" src = {profilePicture} alt = "avatar"/>
                 </div>
             </div>
             <div className = "wd-width-100">
                 <textarea
-                    className="form-control wd-bg-black mb-3"
+                    className="form-control-plaintext mb-3"
                     placeholder="What's happening?"
                     value={whatsHappening}
                     onChange={(event) => setWhatsHappening(event.target.value)}

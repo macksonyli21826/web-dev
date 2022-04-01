@@ -11,6 +11,13 @@
     border-radius: 48px;
     margin-right: 10px;
 }
+.wd-profilepic{
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    border-style: solid;
+    border-color: black;
+}
 
 .wd-space-between{
     justify-content: space-between;
@@ -75,4 +82,14 @@
 
 .wd-width-100{
     width: 100%;
+}
+.wd-width-80{
+    width: 80%;
+}
+.wd-sm-font{
+    font-size: 12px;
+}
+.wd-edit-border{
+    border-style: solid;
+    border-color: #3b3b3b;
 }
