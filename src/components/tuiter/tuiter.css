@@ -1,7 +1,4 @@
 
-/* Try to solve the More of the navigation bar */
-.fa-stack{
-}
 .wd-bold{
     font-weight: bold;
 }
@@ -66,4 +63,16 @@
 
 .wd-border-top{
     border-top: 0.8px solid #3b3b3b;
+}
+
+.wd-bg-black{
+    background-color: black;
+}
+
+.wd-tuiter-blue {
+    color: rgb(29,161,242);
+}
+
+.wd-width-100{
+    width: 100%;
 }

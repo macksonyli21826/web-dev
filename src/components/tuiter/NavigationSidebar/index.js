@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 const NavigationSidebar = (
     {
-        active = 'explore'
+        active = 'home'
     }) => {return(
         <div>
             <div classNameName="list-group">
@@ -15,7 +15,7 @@ const NavigationSidebar = (
                         </div>
                     </div>
                 </Link>
-                <Link to = "/tuiter/home" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
+                <Link to = "/tuiter" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
                     <div className = "row">
                         <div className = "col-2">
                             <i className="fa fa-home"></i>
