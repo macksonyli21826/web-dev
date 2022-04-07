@@ -1,10 +1,23 @@
-import tuits from "../data/tuits.json";
-const tuitsReducer = (state = tuits, action) => {
+//import tuits from "../data/tuits.json";
+import{DELETE_TUIT, FIND_ALL_TUITS, CREATE_TUIT, UPDATE_TUIT} from "../../../actions/tuits-action";
+
+const tuitsReducer = (state = [], action) => {
     switch (action.type) {
 
         default:
-            return tuits
+            return state;
+        case DELETE_TUIT:
+            return state.filter(
+                tuit => tuit._id !== action.tuit._id);
+            /*
+        case 'delete-tuit':
+            return state.filter(
+                tuit => tuit._id !== action.tuit._id);
+            */
 
+        case FIND_ALL_TUITS:
+            return action.tuits;
+            // old create tuit
         case 'create-tuit':
             const newTuit = {
                 tuit: action.tuit,
@@ -22,10 +35,12 @@ const tuitsReducer = (state = tuits, action) => {
                 newTuit,
                 ...state,
             ];
-
-        case 'delete-tuit':
-            return state.filter(
-                tuit => tuit._id !== action.tuit._id);
+        // new create tuit
+        case CREATE_TUIT:
+            return [
+                ...state,
+                action.newTuit
+            ];
 
         case 'like-tuit':
             return state.map(tuit => {
@@ -42,6 +57,11 @@ const tuitsReducer = (state = tuits, action) => {
                     return tuit;
                 }
             });
+
+        case UPDATE_TUIT:
+            return state.map(
+                tuit => tuit._id === action.tuit._id ?
+                    action.tuit : tuit);
     }
 }
 export default tuitsReducer;

@@ -1,12 +1,15 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import TuitStats from "./TuitStats";
+//import TuitStats from "./TuitStats";
 import jsImage from "../../../images/js.png";
+import {deleteTuit, updateTuit} from "../../../actions/tuits-action";
+
+
 const TuitListItem = ({tuit}) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
+    //const deleteTuit = (tuit) => {
+      //  dispatch({type: 'delete-tuit', tuit})
+    //};
     return (
         <div className = "list-group-item">
             <div className = "wd-flex">
@@ -17,17 +20,16 @@ const TuitListItem = ({tuit}) => {
                     <div className = "wd-flex wd-space-between">
                         <div className = "wd-flex">
                             <div className = "wd-bold wd-white">
-                                {tuit.postedBy.username}
+                                {tuit.username}
                             </div>
                             <div className = "ms-1 wd-darkgrey">
                                 @{tuit.handle}
                             </div>
                         </div>
                         <div className = "me-0">
-                            <i onClick={() =>
-                                deleteTuit(tuit)}
-                               className="fa fa-window-close">
-                            </i>
+                            <i className="fa fa-window-close"
+                                onClick={() => deleteTuit(
+                                dispatch, tuit)}></i>
                         </div>
                     </div>
 
@@ -46,7 +48,26 @@ const TuitListItem = ({tuit}) => {
                         <img className = "card-img" src = {jsImage} alt = "post"/>
                     }
                     </div>
-                    <div className="row mt-2 wd-darkgrey">
+                    <div>
+                        Likes: {tuit.likes}
+                        <i onClick={() => updateTuit(dispatch, {
+                            ...tuit,
+                            likes: tuit.likes + 1
+                        })} className="far fa-thumbs-up ms-2"></i>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    )
+}
+export default TuitListItem;
+/*
+Below are the four icons under every tuit. It does not work at this moment
+
+                        <div className="row mt-2 wd-darkgrey">
                         <div className="col-3">
                             <i className="fa fa-comment me-3"></i>
                             {tuit.stats.comments}
@@ -62,11 +83,4 @@ const TuitListItem = ({tuit}) => {
                             <i className="fa fa-upload"></i>
                         </div>
                     </div>
-
-
-                </div>
-            </div>
-        </div>
-    )
-}
-export default TuitListItem;
+ */

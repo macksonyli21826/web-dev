@@ -1,16 +1,20 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
+import {createTuit} from "../../../actions/tuits-action";
 import profilePicture from "../../../images/profilePicture.png";
 
 const WhatsHappening = () => {
-    let [whatsHappening, setWhatsHappening]
-        = useState('');
+    //let [whatsHappening, setWhatsHappening]
+    //  = useState('');
+    const [newTuit, setNewTuit] =
+        useState({tuit: 'New tuit'});
+
     const dispatch = useDispatch();
-    const tuitClickHandler = () => {
-        dispatch({type: 'create-tuit',
-            tuit: whatsHappening
-        })
-    }
+    //const tuitClickHandler = () => {
+    //  dispatch({type: 'create-tuit',
+    //    tuit: whatsHappening
+    //    })
+    //}
     return (
         <div className = "wd-flex">
             <div>
@@ -22,8 +26,10 @@ const WhatsHappening = () => {
                 <textarea
                     className="form-control-plaintext mb-3"
                     placeholder="What's happening?"
-                    value={whatsHappening}
-                    onChange={(event) => setWhatsHappening(event.target.value)}
+
+                    onChange={(e) =>
+                    setNewTuit({...newTuit,
+                        tuit: e.target.value})}
                 >
                 </textarea>
 
@@ -34,8 +40,10 @@ const WhatsHappening = () => {
                         <i className= "wd-tuiter-blue fa fa-smile me-3"></i>
                         <i className= "wd-tuiter-blue fa fa-calendar-alt me-3"></i>
                     </div>
-                    <button className = "btn btn-primary btn-block rounded-pill mt-3 mb-3" onClick={tuitClickHandler}>
-                        Tweet
+                    <button className = "btn btn-primary btn-block rounded-pill mt-3 mb-3"
+                            onClick = {()=>
+                                createTuit(dispatch, newTuit)}>
+                        Tuit
                     </button>
                 </div>
             </div>
