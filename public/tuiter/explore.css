@@ -48,17 +48,18 @@
 }
 .form-control.wd-search-bar{
     border-radius: 20px;
+    border-color: black;
     padding-left: 50px;
     width: 550px;
+    background-color: rgb(48,48,48);
 }
 .wd-magnify{
     position: relative;
     left: 30px;
     margin-top: 10px;
+    color: grey;
 }
-.wd-gear {
-    color: rgb(29,161,242);
-}
+
 .wd-hyperlink{
     margin-top: 10px;
 }
@@ -93,8 +94,12 @@
 }
 .wd-whtf-font{
     font-weight: bold;
+    color: white;
 }
 
+.wd-list-group{
+    border-radius: 10px;
+}
 .wd-who-to-follow{
 }
 
@@ -124,10 +129,18 @@
 .wd-who-to-follow-button{
     margin-top: 5px;
 }
+.list-group-item.wd-override-card-bg-black{
+    background-color: #1a1a1a;
+}
+
 
 .btn-primary.wd-override-follow-button{
     border-radius: 20px;
+    border-color: white;
     width: 80px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
 }
 .wd-span-shrink{
     margin-left: 0px;
@@ -234,4 +247,11 @@ input::placeholder {
 }
 .wd-bg-black{
     background-color: black;
+}
+.wd-black{
+    color: black;
+}
+
+.nav-link.wd-override-grey{
+    color: grey;
 }
