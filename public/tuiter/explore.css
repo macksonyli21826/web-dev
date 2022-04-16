@@ -232,3 +232,6 @@ input::placeholder {
 .wd-time{
     margin-left: 5px;
 }
+.wd-bg-black{
+    background-color: black;
+}
